@@ -3,13 +3,14 @@ package com.pluralsight;
 public class Book{
     private int id;
     private String isbn, title, CheckedOutto;
+    private boolean isCheckedOut;
 
     public Book(int id, String isbn, String title, String CheckedOutto, boolean isCheckedOut) {
         this.id = id;
         this.isbn = isbn;
         this.title = title;
         this.CheckedOutto = CheckedOutto;
-        this.isCheckedOut() = isCheckedOut;
+        this.isCheckedOut = isCheckedOut;
     }
 
   public void checkout(String name){
@@ -54,8 +55,8 @@ public int getid() {
         return isCheckedOut();
     }
 
-    public void setCheckedOut(boolean checkedOut) {
-        isCheckedOut() = checkedOut;
-    }
+
+
 
 }
+
